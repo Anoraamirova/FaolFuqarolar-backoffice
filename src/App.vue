@@ -3,7 +3,7 @@
     <transition
       name="component-fade"
       mode="out-in"
-      color="light-#DB2E65lighten-5"
+      color="light-#01838Flighten-5"
     >
       <router-view></router-view>
     </transition>

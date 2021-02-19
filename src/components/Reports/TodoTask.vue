@@ -12,7 +12,7 @@
                 <v-file-input
                   accept="image/*"
                   v-model="task.image"
-                  color="deep-purple accent-4"
+                  color="#01838F"
                   counter
                   dense
                   :label="$t('rasm')"
@@ -22,13 +22,7 @@
                   :show-size="1000"
                 >
                   <template v-slot:selection="{ index, text }">
-                    <v-chip
-                      v-if="index < 2"
-                      color="deep-purple accent-4"
-                      dark
-                      label
-                      small
-                    >
+                    <v-chip v-if="index < 2" color="#01838F" dark label small>
                       {{ text }}
                     </v-chip>
 
@@ -57,14 +51,14 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
-            color="#DB2E65"
+            color="#01838F"
             text
             :disabled="isSubmited"
             @click="assignedTask.dialog = false"
             >{{ $t("bekor_qilish") }}</v-btn
           >
           <v-btn
-            color="#DB2E65"
+            color="#01838F"
             :disabled="isSubmited || !isfilled"
             text
             @click="submitData"
@@ -75,7 +69,7 @@
           indeterminate
           v-if="isSubmited"
           height="12"
-          color="#DB2E65"
+          color="#01838F"
         ></v-progress-linear>
       </v-card>
     </v-dialog>

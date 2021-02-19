@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="4">
       <v-list style="overflow-y: scroll" height="90vh" two-line>
-        <v-list-item-group color="#DB2E65">
+        <v-list-item-group color="#01838F">
           <v-list-item
             v-for="(tashkilot, i) in tashkilotNomi"
             :key="i"
@@ -16,7 +16,7 @@
             </v-list-item-content>
             <!-- {{ countMessages[i] ? " (" + countMessages[i].count + ")" : "" }} -->
             <v-list-item-icon>
-              <v-icon :color="tashkilot.status ? '#DB2E65' : 'grey'"
+              <v-icon :color="tashkilot.status ? '#01838F' : 'grey'"
                 >mdi-chat</v-icon
               >
             </v-list-item-icon>
@@ -26,7 +26,7 @@
     </v-col>
     <!-- new----------start------------------ -->
     <v-col
-      style="border-left: 1px solid #DB2E65; height: 90vh"
+      style="border-left: 1px solid #01838F; height: 90vh"
       class="d-flex flex-column justify-space-between pl-0"
     >
       <v-card-subtitle
@@ -35,7 +35,7 @@
         color="pink lighten-1"
         >{{ organ_name }}</v-card-subtitle
       >
-      <hr style="color: #DB2E65" />
+      <hr style="color: #01838F" />
       <v-list style="overflow-y: scroll" height="800px" id="mainScroll">
         <v-list-item
           :class="
@@ -83,7 +83,7 @@
             fab
             dark
             small
-            color="#DB2E65"
+            color="#01838F"
             @click.prevent="deleteChat(msg.id)"
           >
             <v-icon>mdi-delete</v-icon>
@@ -120,7 +120,7 @@
             fab
             dark
             small
-            color="#DB2E65"
+            color="#01838F"
             @click="Scrolling()"
           >
             <v-icon light> mdi-chevron-down </v-icon>
@@ -133,9 +133,9 @@
           :append-outer-icon="marker ? 'mdi-send' : 'mdi-pencil'"
           filled
           clear-icon="mdi-close-circle"
-          color="#DB2E65"
+          color="#01838F"
           clearable
-          label="Xabar yozing"
+          :label="$t('Xabar_yozing')"
           type="text"
           @click:append="toggleMarker"
           @click:append-outer="

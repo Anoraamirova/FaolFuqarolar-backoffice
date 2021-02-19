@@ -34,8 +34,8 @@
                 mandatory
                 @change="setLocale(lang)"
               >
-                <v-radio label="Uz" value="uz" color="#DB2E65"></v-radio>
-                <v-radio label="Ru" value="ru" color="#DB2E65"> </v-radio>
+                <v-radio label="Uz" value="uz" color="#01838F"></v-radio>
+                <v-radio label="Ru" value="ru" color="#01838F"> </v-radio>
               </v-radio-group>
             </v-col>
           </v-row>
@@ -82,7 +82,7 @@
                 <v-text-field
                   outlined
                   dense
-                  color="#DB2E65"
+                  color="#01838F"
                   v-model="setPwd.oldPassword"
                   :label="$t('eski_parol_kiriting')"
                   :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
@@ -95,7 +95,7 @@
                 <v-text-field
                   outlined
                   dense
-                  color="#DB2E65"
+                  color="#01838F"
                   v-model="setPwd.newPassword"
                   :label="$t('yangi_parol_kiriting')"
                   :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'"
@@ -110,7 +110,7 @@
                 <v-text-field
                   outlined
                   dense
-                  color="#DB2E65"
+                  color="#01838F"
                   v-model="setPwd.repeatNewPassword"
                   :label="$t('yangi_qayta_parol')"
                   :append-icon="show3 ? 'mdi-eye' : 'mdi-eye-off'"
@@ -130,7 +130,7 @@
                     <v-btn
                       :disabled="ispwd"
                       @click="passwordReset"
-                      color="#DB2E65"
+                      color="#01838F"
                       >{{ $t("saqlash") }}</v-btn
                     >
                   </v-col>
@@ -214,7 +214,7 @@
           :indeterminate="loading"
           absolute
           bottom
-          color="deep-purple accent-4"
+          color="#01838F"
         ></v-progress-linear>
       </v-app-bar>
       <v-main>

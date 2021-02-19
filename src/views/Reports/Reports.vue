@@ -12,7 +12,7 @@
             item-text="name"
             item-value="name"
             dense
-            color="#DB2E65"
+            color="#01838F"
           ></v-select>
         </v-col>
         <v-col cols="auto">
@@ -23,7 +23,7 @@
             transition="scale-transition"
             offset-y
             min-width="290px"
-            color="#DB2E65"
+            color="#01838F"
           >
             <template v-slot:activator="{ on, attrs }">
               <v-text-field
@@ -33,13 +33,13 @@
                 readonly
                 v-bind="attrs"
                 v-on="on"
-                color="#DB2E65"
+                color="#01838F"
               ></v-text-field>
             </template>
             <v-date-picker
               v-model="startDate"
               @input="menu1 = false"
-              color="#DB2E65"
+              color="#01838F"
             ></v-date-picker>
           </v-menu>
         </v-col>
@@ -51,7 +51,7 @@
             transition="scale-transition"
             offset-y
             min-width="290px"
-            color="#DB2E65"
+            color="#01838F"
           >
             <template v-slot:activator="{ on, attrs }">
               <v-text-field
@@ -61,14 +61,14 @@
                 readonly
                 v-bind="attrs"
                 v-on="on"
-                color="#DB2E65"
+                color="#01838F"
               ></v-text-field>
             </template>
             <v-date-picker
               :min="startDate"
               v-model="finishDate"
               @input="menu2 = false"
-              color="#DB2E65"
+              color="#01838F"
             ></v-date-picker>
           </v-menu>
         </v-col>
@@ -98,7 +98,7 @@
             small
             fab
             white
-            color="#DB2E65"
+            color="#01838F"
             :href="`${base}${getExcelUrl}`"
             target="_blank"
             ><v-icon color="white">mdi-printer-settings</v-icon></v-btn
@@ -123,7 +123,7 @@
             <template v-slot:item.citizen="{ item }">
               {{ item.citizen.name + " " + item.citizen.surname }}
               <p class="black--text">
-                <v-icon color="#DB2E65" size="16">mdi-home-city</v-icon>
+                <v-icon color="#01838F" size="16">mdi-home-city</v-icon>
                 {{ item.citizen.street + " " + item.citizen.home }}
               </p>
             </template>
@@ -148,7 +148,7 @@
                 fab
                 small
                 text
-                color="#DB2E65"
+                color="#01838F"
                 ><v-icon>mdi-eye</v-icon></v-btn
               >
             </template>
@@ -166,7 +166,7 @@
           <v-pagination
             v-model="page"
             :length="totalDesserts"
-            color="#DB2E65"
+            color="#01838F"
           ></v-pagination>
         </v-col>
       </v-row>

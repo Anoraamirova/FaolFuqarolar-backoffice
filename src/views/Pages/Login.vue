@@ -7,12 +7,12 @@
             <v-card class="elevation-5 pa-7" :loading="loading" color="white">
               <v-row justify="center">
                 <v-col cols="auto">
-                  <v-icon left size="70" color="#DB2E65"
+                  <v-icon left size="70" color="#01838F"
                     >mdi-briefcase-account</v-icon
                   >
                 </v-col>
               </v-row>
-              <p class="text-center text-h4" color="#DB2E65">
+              <p class="text-center text-h4" color="#01838F">
                 <span class="mt-2 black--txt">Obod Pskent</span>
               </p>
               <v-card-text>
@@ -23,7 +23,7 @@
                     name="login"
                     prepend-icon="mdi-account"
                     type="text"
-                    color="#DB2E65"
+                    color="#01838F"
                   ></v-text-field>
 
                   <v-text-field
@@ -34,7 +34,7 @@
                     prepend-icon="mdi-lock"
                     type="password"
                     v-on:keyup.enter="enter"
-                    color="#DB2E65"
+                    color="#01838F"
                   ></v-text-field>
                 </v-form>
                 <transition name="slide-fade">
@@ -45,7 +45,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn @click="enter" large outlined color="#DB2E65" block
+                <v-btn @click="enter" large outlined color="#01838F" block
                   >KIRISH</v-btn
                 >
               </v-card-actions>

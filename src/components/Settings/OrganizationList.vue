@@ -36,10 +36,10 @@
           :items-per-page="20"
           :search="search"
           class="elevation-0"
-          color="#DB2E65"
+          color="#01838F"
         >
           <template v-slot:item.id="{ item }">
-            <v-btn @click="getInfo(item)" fab small text color="#DB2E65"
+            <v-btn @click="getInfo(item)" fab small text color="#01838F"
               ><v-icon>mdi-eye</v-icon></v-btn
             >
             <v-btn
@@ -48,7 +48,7 @@
               fab
               small
               text
-              color="#DB2E65"
+              color="#01838F"
               ><v-icon>mdi-pen</v-icon></v-btn
             >
             <v-btn
@@ -57,7 +57,7 @@
               fab
               small
               text
-              color="#DB2E65"
+              color="#01838F"
               ><v-icon>mdi-briefcase-plus</v-icon></v-btn
             >
           </template>
@@ -95,7 +95,7 @@
               fab
               small
               text
-              color="#DB2E65"
+              color="#01838F"
               ><v-icon>mdi-pen</v-icon></v-btn
             >
           </template>

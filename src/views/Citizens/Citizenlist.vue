@@ -64,7 +64,7 @@
           <v-pagination
             v-model="page"
             :length="totalDesserts"
-            color="#DB2E65"
+            color="#01838F"
           ></v-pagination>
         </v-col>
       </v-row>

@@ -82,7 +82,7 @@
           >
             <v-card-title>
               <h5 class="text-title txtCr grey--txt">{{ $t("rasm") }}</h5>
-              <v-icon right color="#DB2E65"
+              <v-icon right color="#01838F"
                 >mdi-image-size-select-actual</v-icon
               >
               <v-spacer></v-spacer>
@@ -99,7 +99,7 @@
                 :alt="userInfo.comments[0].image.imageUrl"
               />
               <div class="my-2 text--black text-body-1">
-                <v-icon left color="#DB2E65">mdi-message-text</v-icon
+                <v-icon left color="#01838F">mdi-message-text</v-icon
                 >{{ userInfo.comments[0].text }}
               </div>
             </v-card-text>
@@ -109,7 +109,7 @@
           <v-card flat class="py-0">
             <v-card-title class="py-0"
               ><h5 class="txtCr">{{ $t("izohlar") }}</h5>
-              <v-icon right color="#DB2E65"
+              <v-icon right color="#01838F"
                 >mdi-comment-text-multiple-outline</v-icon
               >
             </v-card-title>
@@ -118,7 +118,7 @@
                 <v-list-item v-if="i !== 0" :key="i">
                   <v-list-item-avatar
                     dark
-                    :color="item.typeId == 2 ? 'orange' : '#DB2E65'"
+                    :color="item.typeId == 2 ? 'orange' : '#01838F'"
                     size="40"
                   >
                     <span class="text-uppercase">{{
@@ -127,7 +127,7 @@
                   </v-list-item-avatar>
                   <v-list-item-content>
                     <v-list-item-title class="text-caption"
-                      ><v-icon left size="20" color="#DB2E65">mdi-bank</v-icon>
+                      ><v-icon left size="20" color="#01838F">mdi-bank</v-icon>
                       <v-tooltip bottom>
                         <template v-slot:activator="{ on, attrs }">
                           <span class="text-caption" v-bind="attrs" v-on="on"

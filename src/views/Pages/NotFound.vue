@@ -17,7 +17,7 @@
               rounded
               large
               elevation="10"
-              color="#DB2E65ligten-2"
+              color="#01838Fligten-2"
               to="/"
               dark
               >Back to home</v-btn

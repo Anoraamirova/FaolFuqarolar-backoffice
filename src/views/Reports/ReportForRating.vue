@@ -16,7 +16,7 @@
           elevation="0"
           tile
           outlined
-          style="border-color:#DB2E65; border-radius:20px"
+          style="border-color:#01838F; border-radius:20px"
         >
           <v-card-text black>
             <h1 class="h1 display-3">{{ item.value }}</h1>
@@ -44,7 +44,7 @@
               <v-btn
                 class="mx-4"
                 small
-                color="#DB2E65"
+                color="#01838F"
                 :href="`${base}organizations/report?format=excel`"
                 target="_blank"
                 >Excel <v-icon right>mdi-file-download-outline</v-icon></v-btn

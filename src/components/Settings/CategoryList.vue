@@ -19,7 +19,7 @@
             :label="$t('yangi_kategoriya_qoshish(uz)')"
             :error="error.flag"
             :error-messages="error.msg"
-            color="#DB2E65"
+            color="#01838F"
           ></v-text-field>
         </v-col>
         <v-col cols="3">
@@ -28,7 +28,7 @@
             :label="$t('yangi_kategoriya_qoshish(ru)')"
             :error="error.flag"
             :error-messages="error.msg"
-            color="#DB2E65"
+            color="#01838F"
           ></v-text-field>
         </v-col>
         <v-col v-if="false" cols="3">
@@ -37,11 +37,11 @@
             :error="error.flag"
             :error-messages="error.msg"
             label="Yangi kategoriya qo'shish (Ingliz tilida)"
-            color="#DB2E65"
+            color="#01838F"
           ></v-text-field>
         </v-col>
         <v-col cols="auto">
-          <v-btn color="#DB2E65" dark @click="postCategory">{{
+          <v-btn color="#01838F" dark @click="postCategory">{{
             $t("qoshish")
           }}</v-btn>
         </v-col>
@@ -83,7 +83,7 @@
                           fab
                           small
                           text
-                          ><v-icon color="#DB2E65"
+                          ><v-icon color="#01838F"
                             >mdi-package-down</v-icon
                           ></v-btn
                         >
@@ -113,7 +113,7 @@
                       <td>{{ item.updatedAt | moment("D.MM.YYYY") }}</td>
                       <td>
                         <v-btn @click="unarchived(item)" fab small text
-                          ><v-icon color="#DB2E65"
+                          ><v-icon color="#01838F"
                             >mdi-arrow-up-bold-box</v-icon
                           ></v-btn
                         >
@@ -129,7 +129,7 @@
           <v-pagination
             v-model="page"
             :length="4"
-            color="#DB2E65"
+            color="#01838F"
           ></v-pagination>
         </v-col>
       </v-row>

@@ -58,7 +58,7 @@
                         </v-card-title>
                         <v-card-actions>
                           <v-btn
-                            color="#DB2E65"
+                            color="#01838F"
                             :to="`/statistika/${infoWindow.data.id}`"
                             >{{ $t("koproq") }}</v-btn
                           >
@@ -98,7 +98,7 @@
                   item-text="title"
                   item-value="title"
                   :label="$t('murojaat_holat_tanla')"
-                  color="#DB2E65"
+                  color="#01838F"
                 >
                   ></v-select
                 >
@@ -110,7 +110,7 @@
                 :label="$t('Qidirish')"
                 single-line
                 hide-details
-                text-color="#DB2E65"
+                text-color="#01838F"
                 color="grey lighten-1"
               ></v-text-field>
             </v-card-title>
@@ -124,7 +124,7 @@
               :headers="headers"
               :items="desserts"
               :search="search"
-              color="#DB2E65"
+              color="#01838F"
             >
               <template v-slot:item.createdAt="{ item }">
                 {{ item.createdAt | moment("DD.MM.YYYY, HH:mm") }}
@@ -144,7 +144,7 @@
                         v-text="'+' + item.citizen.phone"
                       ></v-list-item-subtitle>
                       <p class="gray--text">
-                        <v-icon color="#DB2E65" size="16">mdi-home-city</v-icon>
+                        <v-icon color="#01838F" size="16">mdi-home-city</v-icon>
                         {{ item.citizen.street + " " + item.citizen.home }}
                       </p>
                     </v-list-item-content>
@@ -155,7 +155,7 @@
                 <v-row>
                   <v-col cols="auto">
                     <v-btn fab small text @click="focusOnMap(item)"
-                      ><v-icon color="light-#DB2E65darken-2"
+                      ><v-icon color="light-#01838Fdarken-2"
                         >mdi-magnify-plus</v-icon
                       ></v-btn
                     >
@@ -163,7 +163,7 @@
                   <v-col cols="auto">
                     <v-btn
                       outlined
-                      color="#DB2E65"
+                      color="#01838F"
                       @click="$router.push(`statistika/${item.id}`)"
                       >{{ $t("koproq") }}
                       <v-icon right>mdi-arrow-right</v-icon></v-btn
@@ -178,7 +178,7 @@
                   v-if="totallength"
                   v-model="selectedPage"
                   :length="totallength"
-                  color="#DB2E65"
+                  color="#01838F"
                 ></v-pagination>
               </v-col>
             </v-row>

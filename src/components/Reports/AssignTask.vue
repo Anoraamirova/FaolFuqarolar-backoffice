@@ -14,6 +14,7 @@
                   v-model="task.organization"
                   return-object
                   item-text="name"
+                  color="#01838F"
                   item-value="name"
                   :label="$t('tashkilot_tanlang')"
                 ></v-autocomplete>
@@ -34,6 +35,7 @@
                       prepend-icon="mdi-calendar"
                       readonly
                       v-bind="attrs"
+                      color="#01838F"
                       v-on="on"
                     ></v-text-field>
                   </template>
@@ -50,7 +52,7 @@
                   :label="$t('sizning_matningiz')"
                   v-model="task.comment"
                   :hint="$t('topshiriqni_yozing')"
-                  pink
+                  color="#01838F"
                 ></v-textarea>
               </v-col>
             </v-row>
@@ -58,11 +60,11 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="#DB2E65" text @click="assignedTask.dialog = false">{{
+          <v-btn color="#01838F" text @click="assignedTask.dialog = false">{{
             $t("yopish")
           }}</v-btn>
           <v-btn
-            color="#DB2E65"
+            color="#01838F"
             text
             @click="assignTask"
             :disabled="!isFormFilled"
@@ -73,7 +75,7 @@
           indeterminate
           v-if="isSubmited"
           height="12"
-          color="#DB2E65"
+          color="#01838F"
         ></v-progress-linear>
       </v-card>
     </v-dialog>

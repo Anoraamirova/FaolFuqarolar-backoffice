@@ -25,7 +25,7 @@
             </v-col>
             <v-col cols="12" class="py-0">
               <div class="ml-2 mt-3 black--text">
-                <v-icon size="20" left color="#DB2E65">mdi-phone</v-icon> +{{
+                <v-icon size="20" left color="#01838F">mdi-phone</v-icon> +{{
                   userInfo.data.citizen.phone
                 }}
               </div>
@@ -38,7 +38,7 @@
         <v-card-title>Murojaatlar ro'yxati</v-card-title>
 
         <v-card-text>
-          <v-chip-group active-class="deep-purple accent-4 white--text" column>
+          <v-chip-group active-class="#01838F white--text" column>
             <v-chip color="grey">Umumiy: {{ stats.all }}</v-chip>
 
             <v-chip color="success">Hal etilgan: {{ stats.closed }}</v-chip>
@@ -54,11 +54,7 @@
         </v-card-text>
 
         <v-card-actions>
-          <v-btn
-            @click="userInfo.dialog = false"
-            color="deep-purple lighten-2"
-            text
-          >
+          <v-btn @click="userInfo.dialog = false" color="#01838F" text>
             Yopish
           </v-btn>
         </v-card-actions>

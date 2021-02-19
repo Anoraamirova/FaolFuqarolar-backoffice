@@ -42,7 +42,7 @@
           indeterminate
           v-if="isSubmited"
           height="12"
-          color="pink darken-1"
+          color="#01838F"
         ></v-progress-linear>
       </v-card>
     </v-dialog>
