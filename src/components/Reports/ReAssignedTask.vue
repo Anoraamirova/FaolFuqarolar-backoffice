@@ -14,7 +14,7 @@
                   :label="$t('izoh_uchun_joy')"
                   v-model="comment"
                   outlined
-                  pink
+                  color="#01838F"
                   :hint="$t('bajarilgan_ish_haqida_malumot_bering')"
                 ></v-textarea>
               </v-col>
@@ -24,14 +24,14 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
-            color="pink darken-1"
+            color="#01838F"
             text
             :disabled="isSubmited"
             @click="reAssignedTask.dialog = false"
             >{{ $t("bekor_qilish") }}</v-btn
           >
           <v-btn
-            color="pink darken-1"
+            color="#01838F"
             :disabled="isSubmited"
             text
             @click="submitData"

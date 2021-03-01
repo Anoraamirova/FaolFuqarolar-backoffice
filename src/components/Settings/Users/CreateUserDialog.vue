@@ -66,12 +66,10 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="pink darken-1" text @click="close">{{
-            $t("yopish")
-          }}</v-btn>
+          <v-btn color="#01838F" text @click="close">{{ $t("yopish") }}</v-btn>
           <v-btn
             v-if="userId.isEdited"
-            color="pink darken-1"
+            color="#01838F"
             :disabled="!isFormFilled || !checkValid"
             text
             @click="updateUser(), validate()"
@@ -79,7 +77,7 @@
           >
           <v-btn
             v-else
-            color="pink darken-1"
+            color="#01838F"
             :disabled="!isFormFilled || !checkValid"
             text
             @click="createNewUser(), validate()"

@@ -39,7 +39,7 @@
           class="elevation-0"
         >
           <template v-slot:top>
-            <v-toolbar flat color="pink lighten-5">
+            <v-toolbar flat>
               <h3 class="mr-2">{{ $t("tashkilot_des") }}</h3>
               <v-btn
                 class="mx-4"

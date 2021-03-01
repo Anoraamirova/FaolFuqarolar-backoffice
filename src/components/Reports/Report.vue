@@ -146,7 +146,7 @@
                         </span>
                       </v-tooltip>
                     </v-list-item-title>
-                    <v-list-item-subtitle class="text--pink"
+                    <v-list-item-subtitle class="text--black"
                       ><strong>{{ $t("izoh") }}: </strong
                       >{{ item.text }}</v-list-item-subtitle
                     >
@@ -245,7 +245,7 @@
             }}</v-btn>
           </v-col>
           <v-col cols="auto">
-            <v-btn @click="assignTask" light color="pink lighten-1">{{
+            <v-btn @click="assignTask" light color="#01838F">{{
               $t("topshiriq")
             }}</v-btn>
           </v-col>

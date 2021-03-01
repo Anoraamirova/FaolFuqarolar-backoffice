@@ -181,13 +181,13 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="pink darken-1" text @click="close">{{
+            <v-btn color="#01838F" text @click="close">{{
               $t("yopish")
             }}</v-btn>
             <v-btn
               v-if="!isNew"
               :disabled="!isFormFielled || !valid"
-              color="pink darken-1"
+              color="#01838F"
               text
               @click="saveData(), validate()"
               >{{ $t("yaratish") }}</v-btn
@@ -195,7 +195,7 @@
             <v-btn
               v-if="isNew"
               :disabled="!valid"
-              color="pink darken-1"
+              color="#01838F"
               text
               @click="saveEdited(), validate()"
               >{{ $t("saqlash") }}</v-btn

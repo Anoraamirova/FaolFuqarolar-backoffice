@@ -32,7 +32,7 @@
       <v-card-subtitle
         v-model="organ_name"
         class="display-1"
-        color="pink lighten-1"
+        color="gray lighten-1"
         >{{ organ_name }}</v-card-subtitle
       >
       <hr style="color: #01838F" />

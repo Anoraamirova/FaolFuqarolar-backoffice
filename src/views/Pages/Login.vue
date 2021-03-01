@@ -58,69 +58,69 @@
 </template>
 
 <script>
-import Auth from "../../services/Auth";
+import Auth from '../../services/Auth'
 export default {
   props: {
     source: String
   },
-  data() {
+  data () {
     return {
       loading: false,
       error: {
         flag: false,
-        message: "",
-        type: ""
+        message: '',
+        type: ''
       },
-      username: "",
-      password: ""
-    };
+      username: '',
+      password: ''
+    }
   },
   watch: {
-    username(val) {
+    username (val) {
       // console.log(val)
       this.error = {
         flag: false,
-        message: "",
-        type: ""
-      };
+        message: '',
+        type: ''
+      }
     },
-    password(val) {
+    password (val) {
       this.error = {
         flag: false,
-        message: "",
-        type: ""
-      };
+        message: '',
+        type: ''
+      }
       // console.log(val)
     }
   },
   methods: {
-    enter() {
-      this.loading = true;
+    enter () {
+      this.loading = true
       Auth.getToken({ username: this.username, password: this.password })
         .then(res => {
           // console.log(res)
-          this.$store.dispatch("login", res.data);
-          this.loading = false;
-          this.$router.push("/");
+          this.$store.dispatch('login', res.data)
+          this.loading = false
+          this.$router.push('/')
         })
         .catch(err => {
-          console.log(err);
+          console.log(err)
           if (err.status === 401) {
-            this.loading = false;
-            this.error.flag = true;
-            this.error.message = "Login va parolda xatolik bor. Qayta kiriting";
-            this.error.type = "error";
+            this.loading = false
+            this.error.flag = true
+            this.error.message = 'Login va parolda xatolik bor. Qayta kiriting'
+            this.error.type = 'error'
           } else if (err.status === 429) {
-            this.loading = false;
-            this.error.flag = true;
+            this.loading = false
+            this.error.flag = true
             this.error.message =
-              "Siz ko'p urunishlar qildingiz. Iltimos 5 daqiqadan so'ng qayta kiriting";
-            this.error.type = "warning";
+              "Siz ko'p urunishlar qildingiz. Iltimos 5 daqiqadan so'ng qayta kiriting"
+            this.error.type = 'warning'
           }
-        });
+        })
     }
   }
-};
+}
 </script>
 <style scoped>
 .slide-fade-enter-active {
