@@ -96,6 +96,7 @@
                   return-object
                   v-model="selectedType"
                   item-text="title"
+                  item-color="#01838F"
                   item-value="title"
                   :label="$t('murojaat_holat_tanla')"
                   color="#01838F"
